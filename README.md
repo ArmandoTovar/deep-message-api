@@ -61,6 +61,7 @@ Sigue estos pasos para configurar y ejecutar el proyecto:
   - `DELETE /messages/:id`: Eliminación de mensaje.
 
 ## Estructura del Proyecto
+```
 src/
 ├── auth/
 │   ├── auth.controller.ts
@@ -78,7 +79,7 @@ src/
 │   │   ├── filter-messages.dto.ts
 │   │   └── update-message-status.dto.ts
 └── app.module.ts
-
+```
 
 ## Pruebas
 
