@@ -1,0 +1,21 @@
+version: '1.0'
+services:
+  deep-message-api:
+    build: ../.
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mongodb
+    environment:
+      BD_URL: mongodb://mongodb:27017/deep-message-api
+      JWT_SECRET: e9?heQ<T{_C)/newZQ?Mnitp'RxM"*
+      JWT_EXPIRES: 1d
+    command: npm run start:prod
+  mongodb:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+volumes:
+  mongo-data:

@@ -1,0 +1,25 @@
+# Excluir archivos .jar en la carpeta target
+target/*.jar
+
+# Excluir node_modules
+node_modules/
+
+# Excluir entornos virtuales de Python
+venv/
+.env/
+.venv/
+
+# Excluir carpetas de compilación
+dist/
+out/
+build/
+
+# Archivos temporales y de sistema
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Excluir archivos específicos de Node.js
+*.lock
+.npmrc
